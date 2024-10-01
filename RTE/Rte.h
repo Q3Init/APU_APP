@@ -15,6 +15,7 @@
 #include "MCAL_UART.h"
 #include "MCAL_Timer.h"
 #include "MCAL_NVIC.h"
+#include "MCAL_RTC.h"
 /* BSW */
 #include "BSW_Adcif.h"
 /* APP */

@@ -229,7 +229,7 @@ const RTC_date* rtc_get()
  *    @arg      0: ��ʼ���ɹ�
  *    @arg      1: ��ʼ��ʧ��
  */
-uint8_t rtc_init(void)
+uint8_t MCAL_RTC_Init(void)
 {
     uint16_t bkpflag;
     

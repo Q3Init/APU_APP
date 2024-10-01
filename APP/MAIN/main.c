@@ -1,6 +1,4 @@
 #include "RTE.h"
-#include "MCAL_RTC.h"
-
 #ifdef EASY_OS
 #include "Os_TaskHdl_Lv0.h"
 #include "Os_EvtHdl.h"
@@ -12,7 +10,6 @@
 
 int main(void)
 {
-	rtc_init();
 #ifdef EASY_OS
 	uint8 Priority;
 	(void)RTE_Init();

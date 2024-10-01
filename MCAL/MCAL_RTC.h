@@ -31,7 +31,7 @@ void rtc_write_bkr(BAKPR_DATA_T bkrx, uint16_t data);  /* д���ݼĴ���
 uint16_t rtc_read_bkr(BAKPR_DATA_T bkrx);	/* �����ݼĴ��� */
 
 /*����ӿ�*/
-uint8_t rtc_init(void); /* ��ʼ��RTC */
+uint8_t MCAL_RTC_Init(void); /* ��ʼ��RTC */
 uint8_t rtc_set(uint16_t year, uint8_t month, uint8_t date, uint8_t hour, uint8_t min, uint8_t sec); /* ����RTCʱ�� */
 const RTC_date* rtc_get(void);    /* ��ȡRTCʱ�� */
 extern uint8_t basic_rtc_set(RTC_date time);
