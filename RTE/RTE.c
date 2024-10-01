@@ -4,12 +4,13 @@
 #include "Os_TaskHdl_Lv0.h"
 
 static volatile boolean rteBswRdyFlg = FALSE;
+#define APP_START_ADDRESS 0x8011000
+
 void RTE_Init(void)
 {
     __DISENBLE_IRQ(); /* chip disable irq */
-    /* System Tick */
-    // SystemInit();
-    // SysTick_Config(SystemCoreClock / 1000);
+    /*  */
+    SCB->VTOR = APP_START_ADDRESS;
     /* OS Init */
 #ifdef EASY_OS
     OsEvt_Init();
